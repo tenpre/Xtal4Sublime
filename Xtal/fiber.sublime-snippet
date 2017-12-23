@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[fiber ($1){
+	$2
+}$0]]></content>
+    <tabTrigger>fiber(</tabTrigger>
+    <scope>source.Xtal</scope>
+    <description>fiber(){...}</description>
+</snippet>

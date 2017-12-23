@@ -1,0 +1,31 @@
+{
+    "scope": "source.Xtal",
+
+    "completions":
+    [
+        // 
+        "lib",
+        "global",
+        // Types
+        "null ",
+        "undefined ",
+        "true",
+        "false",
+        "class ",
+        "singleton ",
+        "fun ",
+        "fiber ",
+        // Flow Controls
+        "if",
+        "else",
+        "for",
+        "while",
+        "yield",
+        "switch",
+        "case",
+        "default",
+        "return",
+        // 
+        "initialize",
+    ]
+}

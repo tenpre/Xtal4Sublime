@@ -1,0 +1,59 @@
+{ "name": "Xtal",
+  "scopeName": "source.Xtal",
+  "fileTypes": ["xtal"],
+  "patterns": [
+	{	"name": "comment.line.xtal",
+		"match": "//.*$"
+	},
+
+	{	"name": "comment.block.xtal",
+		"begin": "/\\*",
+		"end": "\\*/",
+		"comment": "Cの構文ファイルから拝借 すみません"
+	},
+
+	{  	"name": "constant.xtal",
+   		"match": "(lib|global|filelocal)::"
+	},
+
+	{  	"name": "storage.xtal",
+   		"match": "(undefined|null|true|false|class|fun|fiber|initialize|singleton)"
+	},
+
+	{  	"name": "keyword.xtal",
+   		"match": "\\b(public|private|protected)"
+	},
+
+	{  "name": "entity.xtal",
+		"match": "(\\(|\\)|\\[|\\]|{|})"
+	},
+
+	{  	"name": "keyword.xtal",
+   		"match": "\\b(if|else|for|while|switch|case|return|yield|default|continue|!)"
+	},
+
+	{  "name": "entity.xtal",
+		"match": "\\b[a-z|A-Z|0-9]*\\s*\\(",
+		"comment" : "関数などのハイライト"
+	},
+	{  "name": "entity.xtal",
+		"match": "\\b[a-z|A-Z|0-9]*\\s*\\{",
+		"comment" : "メソッドのハイライト"
+	},
+
+
+	{  	"name": "keyword.xtal",
+		"match": "([-]|\\+|\\*|/|%|~)",
+		"comment": "加算乗除とmodと文字列結合子"
+	},
+
+	{  "name": "keyword.xtal",
+	   "match": "\\b_"
+	},
+
+	{  "name": "string.xtal",
+	   "match": "\"[^\"]*\""
+	}
+  ],
+  "uuid": "3590add7-a61a-4f61-98d2-99fa5bd90691"
+}
